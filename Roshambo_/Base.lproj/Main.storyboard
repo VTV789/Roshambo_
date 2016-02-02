@@ -99,18 +99,30 @@
                                     <rect key="frame" x="152" y="373" width="97" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lft-Sm-uIM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Play Again"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="165" y="501" width="71" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playAgain:" destination="Oc0-CM-Tqr" eventType="touchUpInside" id="vFh-TI-tut"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="hmr-bU-FCh"/>
                                 <exclude reference="wQk-JG-T3H"/>
+                                <exclude reference="Lft-Sm-uIM"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="hmr-bU-FCh"/>
                                 <include reference="wQk-JG-T3H"/>
+                                <include reference="Lft-Sm-uIM"/>
                             </mask>
                         </variation>
                     </view>

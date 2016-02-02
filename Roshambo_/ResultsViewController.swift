@@ -67,5 +67,9 @@ class ResultsViewController: UIViewController {
         resultLabel.text = text
 
     }
-    
+   
+    @IBAction func playAgain(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
 }
