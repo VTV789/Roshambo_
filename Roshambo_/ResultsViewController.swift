@@ -17,7 +17,7 @@ enum Shape: String {
     // This func randomly generates an opponent's play
     static func randomShape() -> Shape {
         let shapes = ["Rock", "Paper", "Scissor"]
-        let randomChoice = Int(arc4random_uniform, (3))
+        let randomChoice = Int(arc4random_uniform(3))
         return Shape(rawValue: shapes[randomChoice])!
     }
     
@@ -59,6 +59,9 @@ class ResultsViewController: UIViewController {
             imageName = "tie"
         case (.Rock, .Scissors), (.Paper, .Rock), (.Scissors, .Paper):
             text = "You lose with \(matchup) :(. "
+            imageName = "\(opponentChoice.rawValue)-\(userChoice.rawValue)"
+        default:
+            text = "You lose with \(matchup) :(."
             imageName = "\(opponentChoice.rawValue)-\(userChoice.rawValue)"
         }
         
