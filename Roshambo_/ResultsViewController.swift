@@ -41,5 +41,31 @@ class ResultsViewController: UIViewController {
         super.viewWillAppear(animated)
         displayResult()
     }
+    
+    // MARK: -
+    // MARK: UI
+    
+    // The displayResult method generates the image and message for the results of match.
+    private func displayResult() {
+        // Ideally, most of the would be handled by a model.
+        var imageName: String
+        var text: String
+        let matchup = "\(userChoice.rawValue) vs. \(opponentChoice.rawValue)"
+        
+        // Why is an exclamation point necessary? :)
+        switch (userChoice!, opponentChoice) {
+        case let (user, opponent) where user == opponent:
+            text = "\(matchup): it's a tie!"
+            imageName = "tie"
+        case (.Rock, .Scissors), (.Paper, .Rock), (.Scissors, .Paper):
+            text = "You lose with \(matchup) :(. "
+            imageName = "\(opponentChoice.rawValue)-\(userChoice.rawValue)"
+        }
+        
+        imageName = imageName.lowercaseString
+        resultImage.image = UIImage(named: imageName)
+        resultLabel.text = text
 
+    }
+    
 }
