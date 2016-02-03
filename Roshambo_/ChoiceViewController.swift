@@ -9,19 +9,29 @@
 import UIKit
 
 class ChoiceViewController: UIViewController {
+    
+    // MARK: - 
+    // MARK: Programmatic Approach
 
+    @IBAction func playRock(sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ResultsViewConstroller") as! ResultsViewController
+        vc.userChoice = getUserShape(sender)
+        presentViewController(vc, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: Utilites
+    // The enum "Shape" represents a play or move
+    private func getUserShape(sender: UIButton) -> Shape {
+        // Titles are set to one of : Rock, Paper, or Scissors
+        let shape = sender.titleForState(.Normal)!
+        return Shape(rawValue: shape)!
     }
-
-    @IBAction func playRock(sender: UIButton) {
-    }
-
+    
 }
+
+
 
