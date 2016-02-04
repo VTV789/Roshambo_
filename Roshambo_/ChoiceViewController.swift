@@ -13,11 +13,13 @@ class ChoiceViewController: UIViewController {
     // MARK: - 
     // MARK: Programmatic Approach
 
-    @IBAction func playRock(sender: UIButton) {
+    @IBAction private func playRock(sender: UIButton) {
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ResultsViewController") as! ResultsViewController
         vc.userChoice = getUserShape(sender)
         presentViewController(vc, animated: true, completion: nil)
+       
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

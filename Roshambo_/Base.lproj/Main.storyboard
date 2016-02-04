@@ -24,14 +24,14 @@
                                     <rect key="frame" x="177" y="458" width="46" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="ResultsViewController" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5K-hY-OAE" userLabel="rock">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5K-hY-OAE" userLabel="rock">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" backgroundImage="rock"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="69" y="458" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="playRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hR-ON-DN9"/>
+                                    <action selector="playRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqA-bp-wkw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEO-QV-cvs">
@@ -75,7 +75,7 @@
         <!--View Controller-->
         <scene sceneID="qlL-u1-TSF">
             <objects>
-                <viewController storyboardIdentifier="ResultsViewController" id="Oc0-CM-Tqr" sceneMemberID="viewController">
+                <viewController id="Oc0-CM-Tqr" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ajc-ay-0L5"/>
                         <viewControllerLayoutGuide type="bottom" id="SYa-o0-rgb"/>
@@ -133,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZj-3B-5nr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="460"/>
+            <point key="canvasLocation" x="1200" y="460"/>
         </scene>
     </scenes>
     <resources>
