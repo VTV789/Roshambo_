@@ -24,7 +24,7 @@
                                     <rect key="frame" x="177" y="458" width="46" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5K-hY-OAE" userLabel="rock">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="ResultsViewController" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5K-hY-OAE" userLabel="rock">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" backgroundImage="rock"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="399" y="460"/>
         </scene>
-        <!--Results View Controller-->
+        <!--View Controller-->
         <scene sceneID="qlL-u1-TSF">
             <objects>
-                <viewController storyboardIdentifier="ResultsViewController" id="Oc0-CM-Tqr" customClass="ResultsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultsViewController" id="Oc0-CM-Tqr" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ajc-ay-0L5"/>
                         <viewControllerLayoutGuide type="bottom" id="SYa-o0-rgb"/>
@@ -93,7 +93,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQk-JG-T3H">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="152" y="373" width="97" height="21"/>
