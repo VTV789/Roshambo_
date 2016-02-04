@@ -8,7 +8,7 @@
         <!--Choice View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ChoiceViewController" customModule="Roshambo_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChoiceViewController" id="BYZ-38-t0r" customClass="ChoiceViewController" customModule="Roshambo_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,6 +23,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="177" y="458" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="playPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3fX-Hd-ICC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5K-hY-OAE" userLabel="rock">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>

@@ -20,6 +20,10 @@ class ChoiceViewController: UIViewController {
        
     }
 
+    @IBAction func playPaper(sender: UIButton) {
+        performSegueWithIdentifier("play", sender: sender)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
