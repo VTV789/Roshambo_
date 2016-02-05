@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="399" y="460"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="qlL-u1-TSF">
             <objects>
-                <viewController storyboardIdentifier="ResultsViewController" id="Oc0-CM-Tqr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultsViewController" id="Oc0-CM-Tqr" customClass="ResultsViewController" customModule="Roshambo_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ajc-ay-0L5"/>
                         <viewControllerLayoutGuide type="bottom" id="SYa-o0-rgb"/>
@@ -130,7 +130,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="resultImage" destination="hmr-bU-FCh" id="kbV-cf-58T"/>
+                        <outlet property="resultImage" destination="hmr-bU-FCh" id="U0h-oV-035"/>
                         <outlet property="resultLabel" destination="wQk-JG-T3H" id="zNM-p3-Lgj"/>
                     </connections>
                 </viewController>
