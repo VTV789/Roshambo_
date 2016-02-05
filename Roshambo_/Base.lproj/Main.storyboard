@@ -78,7 +78,7 @@
         <!--View Controller-->
         <scene sceneID="qlL-u1-TSF">
             <objects>
-                <viewController id="Oc0-CM-Tqr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultsViewController" id="Oc0-CM-Tqr" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ajc-ay-0L5"/>
                         <viewControllerLayoutGuide type="bottom" id="SYa-o0-rgb"/>

@@ -19,14 +19,11 @@ class ChoiceViewController: UIViewController {
         presentViewController(vc, animated: true, completion: nil)
        
     }
+    
+    // MARK: Segue
 
     @IBAction func playPaper(sender: UIButton) {
         performSegueWithIdentifier("play", sender: sender)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     // MARK: Utilites
