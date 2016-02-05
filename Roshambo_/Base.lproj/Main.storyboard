@@ -70,6 +70,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <segue destination="Oc0-CM-Tqr" kind="show" identifier="play" id="Z3q-yL-DRP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
