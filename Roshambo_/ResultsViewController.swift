@@ -20,7 +20,6 @@ enum Shape: String {
         let randomChoice = Int(arc4random_uniform(3))
         return Shape(rawValue: shapes[randomChoice])!
     }
-    
 }
 
 class ResultsViewController: UIViewController {

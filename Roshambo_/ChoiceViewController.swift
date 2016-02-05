@@ -33,8 +33,8 @@ class ChoiceViewController: UIViewController {
         let shape = sender.titleForState(.Normal)!
         return Shape(rawValue: shape)!
     }
-    
 }
+
 
 
 
