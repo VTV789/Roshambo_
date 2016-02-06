@@ -90,7 +90,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hmr-bU-FCh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itsATie" translatesAutoresizingMaskIntoConstraints="NO" id="hmr-bU-FCh">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="80" y="77" width="240" height="240"/>
@@ -143,6 +143,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="itsATie" width="183" height="200"/>
         <image name="paper" width="75" height="65"/>
         <image name="rock" width="75" height="65"/>
         <image name="scissors" width="75" height="65"/>

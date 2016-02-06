@@ -1,3 +1,4 @@
+
 //
 //  ResultsViewController.swift
 //  Roshambo_
@@ -46,6 +47,7 @@ class ResultsViewController: UIViewController {
     
     // The displayResult method generates the image and message for the results of match.
     private func displayResult() {
+        
         // Ideally, most of the would be handled by a model.
         var imageName: String
         var text: String
