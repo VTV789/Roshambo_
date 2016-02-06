@@ -21,7 +21,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" backgroundImage="paper"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="458" width="46" height="30"/>
+                                    <rect key="frame" x="177" y="355" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="playPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3fX-Hd-ICC"/>
@@ -31,7 +31,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" backgroundImage="rock"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="69" y="458" width="46" height="30"/>
+                                    <rect key="frame" x="69" y="421" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="playRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqA-bp-wkw"/>
@@ -44,12 +44,15 @@
                                     <rect key="frame" x="165" y="525" width="70" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr9-pt-VDu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr9-pt-VDu" userLabel="scissors">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" backgroundImage="scissors"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="284" y="458" width="46" height="30"/>
+                                    <rect key="frame" x="284" y="421" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="Oc0-CM-Tqr" kind="presentation" id="eog-IX-pSj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -70,9 +73,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <segue destination="Oc0-CM-Tqr" kind="show" identifier="play" id="Z3q-yL-DRP"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
