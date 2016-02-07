@@ -20,10 +20,19 @@ class ChoiceViewController: UIViewController {
        
     }
     
-    // MARK: Segue
+    // MARK: Segue with Code Approach
 
     @IBAction func playPaper(sender: UIButton) {
         performSegueWithIdentifier("play", sender: sender)
+    }
+    
+    // MARK: Segue 
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "play" {
+            let vc = segue.destinationViewController as! ResultsViewController
+            vc.userChoice = getUserShape(sender as! UIButton)
+        }
     }
 
     // MARK: Utilites
