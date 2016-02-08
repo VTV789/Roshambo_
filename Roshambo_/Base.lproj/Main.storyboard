@@ -17,16 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZQ-C0-OuZ" userLabel="pager">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" backgroundImage="paper"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="355" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="playPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3fX-Hd-ICC"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5K-hY-OAE" userLabel="rock">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" backgroundImage="rock"/>
@@ -51,25 +41,35 @@
                                     <rect key="frame" x="284" y="421" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="Oc0-CM-Tqr" kind="presentation" id="eog-IX-pSj"/>
+                                    <segue destination="Oc0-CM-Tqr" kind="presentation" identifier="" id="eog-IX-pSj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="play" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZQ-C0-OuZ" userLabel="pager">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" backgroundImage="paper"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="355" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3fX-Hd-ICC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="BZQ-C0-OuZ"/>
                                 <exclude reference="v5K-hY-OAE"/>
                                 <exclude reference="iEO-QV-cvs"/>
                                 <exclude reference="fr9-pt-VDu"/>
+                                <exclude reference="BZQ-C0-OuZ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="BZQ-C0-OuZ"/>
                                 <include reference="v5K-hY-OAE"/>
                                 <include reference="iEO-QV-cvs"/>
                                 <include reference="fr9-pt-VDu"/>
+                                <include reference="BZQ-C0-OuZ"/>
                             </mask>
                         </variation>
                     </view>
