@@ -41,7 +41,7 @@
                                     <rect key="frame" x="284" y="421" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="Oc0-CM-Tqr" kind="presentation" identifier="" id="eog-IX-pSj"/>
+                                    <segue destination="Oc0-CM-Tqr" kind="presentation" identifier="play" id="eog-IX-pSj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="play" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZQ-C0-OuZ" userLabel="pager">
